@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Xiaomi\\RiderProjects\\Algoritm\\Algoritm\\Algoritm.csproj",
+    "projectUniqueName": "C:\\Users\\Xiaomi\\Documents\\GitHub\\Algoritms\\Algoritm\\Algoritm\\Algoritm.csproj",
     "projectName": "Algoritm",
-    "projectPath": "C:\\Users\\Xiaomi\\RiderProjects\\Algoritm\\Algoritm\\Algoritm.csproj",
-    "outputPath": "C:\\Users\\Xiaomi\\RiderProjects\\Algoritm\\Algoritm\\obj\\",
+    "projectPath": "C:\\Users\\Xiaomi\\Documents\\GitHub\\Algoritms\\Algoritm\\Algoritm\\Algoritm.csproj",
+    "outputPath": "C:\\Users\\Xiaomi\\Documents\\GitHub\\Algoritms\\Algoritm\\Algoritm\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.0"

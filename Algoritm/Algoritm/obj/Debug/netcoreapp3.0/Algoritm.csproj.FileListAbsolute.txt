@@ -9,3 +9,14 @@ C:\Users\Xiaomi\RiderProjects\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm
 C:\Users\Xiaomi\RiderProjects\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm.AssemblyInfo.cs
 C:\Users\Xiaomi\RiderProjects\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm.dll
 C:\Users\Xiaomi\RiderProjects\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm.pdb
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\bin\Debug\netcoreapp3.0\Algoritm.exe
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\bin\Debug\netcoreapp3.0\Algoritm.deps.json
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\bin\Debug\netcoreapp3.0\Algoritm.runtimeconfig.json
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\bin\Debug\netcoreapp3.0\Algoritm.runtimeconfig.dev.json
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\bin\Debug\netcoreapp3.0\Algoritm.dll
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\bin\Debug\netcoreapp3.0\Algoritm.pdb
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm.csprojAssemblyReference.cache
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm.AssemblyInfoInputs.cache
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm.AssemblyInfo.cs
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm.dll
+C:\Users\Xiaomi\Documents\GitHub\Algoritms\Algoritm\Algoritm\obj\Debug\netcoreapp3.0\Algoritm.pdb
