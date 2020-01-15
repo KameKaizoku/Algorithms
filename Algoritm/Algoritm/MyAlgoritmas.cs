@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Microsoft.VisualBasic;
 
 namespace Algorithm
 {
@@ -25,8 +27,31 @@ namespace Algorithm
                     sum_r+=arr[j];
                 if (sum_l == sum_r) return i;
             }
-            
+           
             return -1;
+        }
+        
+        public static char FindMissingLetter(char[] array)
+        {
+            int num = (int) array[0];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (num != (int) array[i]) 
+                    return (char)(num);
+                num++;
+            }
+            return ' ';
+        }
+        
+        public static IEnumerable<string> OpenOrSenior(int[][] data)
+        {
+            String[] res = new String[data.Length];
+
+            for (int i = 0; i < data.Length; i++)
+           
+                res[i]= data[i][0] >= 55 && data[i][1] > 7 ? "Senior" : "Open";
+           
+            return res;
         }
         
     }
