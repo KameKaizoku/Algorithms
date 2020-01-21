@@ -8,7 +8,13 @@ namespace Algorithm
         static void Main(string[] args)
         {
            
-            Console.WriteLine(MyAlgorithms.OpenOrSenior(new[] { new[] { 45, 12 }, new[] { 55, 21 }, new[] { 19, 2 }, new[] { 104, 20 } }));
+            //Console.WriteLine(MyAlgorithms.Tribonacci(new double []{1,1,1},10));
+            double[] arr = MyAlgorithms.Tribonacci(new double[] {1, 1, 1}, 10);
+            foreach (var el in arr)
+                Console.Write(el+" ");
+            {
+                
+            }
         }
     }
   

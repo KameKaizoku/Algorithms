@@ -54,5 +54,18 @@ namespace Algorithm
             return res;
         }
         
+        public static double[] Tribonacci(double[] signature, int n)
+            {
+                double[] arr = new double[n];
+                for (int i = 0; i < n; i++)
+                {
+                    if (i < 3) arr[i] = signature[i];
+                    else arr[i] = arr[i - 3] + arr[i - 2] + arr[i - 1];
+                }
+
+                return arr;
+              
+            }
+        
     }
 }
