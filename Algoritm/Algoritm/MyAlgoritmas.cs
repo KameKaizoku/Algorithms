@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualBasic;
 
 namespace Algorithm
@@ -64,8 +65,21 @@ namespace Algorithm
                 }
 
                 return arr;
-              
-            }
+              }
+        
+        public static string GoodVsEvil(string good, string evil)
+        {
+            int[] good_mas = good.Split(' ').Select(int.Parse).ToArray();
+            int[] evil_mas = evil.Split(' ').Select(int.Parse).ToArray();
+            int sum_good = good_mas[0] + good_mas[1] * 2 + good_mas[2] * 3 
+                           + good_mas[3] * 3 + good_mas[4] * 4 + good_mas[5] * 10;
+            int sum_evil = evil_mas[0] + evil_mas[1] * 2 + evil_mas[2] * 2 +evil_mas[3] * 2 
+                           + evil_mas[4] * 3 + evil_mas[5] * 5 + evil_mas[6] * 10;
+            if (sum_evil > sum_good) return "Battle Result: Evil eradicates all trace of Good";
+            else if (sum_evil < sum_good) return "Battle Result: Good triumphs over Evil";
+            else return "Battle Result: No victor on this battle field";
+            
+        }
         
     }
 }
