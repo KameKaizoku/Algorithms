@@ -81,5 +81,24 @@ namespace Algorithm
             
         }
         
+        public static List<string> wave(string str)
+        {
+            List<String> res = new List<string>();
+            for (int i = 0; i < str.Length; i++)
+            {
+                String temp = " ";
+
+                if (str[i] >= 'a' && str[i] <= 'z')
+                {
+                    temp = str.Substring(0, i) + Char.ToUpper(str[i]) +
+                           str.Substring(i + 1, str.Length - (i + 1));
+                    
+                    res.Add(temp);
+                }
+            }
+            
+            return res;
+        }
+        
     }
 }
