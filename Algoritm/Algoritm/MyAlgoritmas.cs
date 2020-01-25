@@ -106,5 +106,15 @@ namespace Algorithm
             return true;
         }
         
+         public static bool ValidParentheses(string input)
+         {
+             Stack<Char> stack = new Stack<char>();
+             foreach (var t in input)
+                 if(t == '(') stack.Push(t);
+                 else if (t==')' && (!stack.Any()  || stack.Pop()!='(')) return false;
+            
+             return !stack.Any();
+         }
+        
     }
 }
