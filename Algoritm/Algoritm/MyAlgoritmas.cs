@@ -49,7 +49,6 @@ namespace Algorithm
             String[] res = new String[data.Length];
 
             for (int i = 0; i < data.Length; i++)
-           
                 res[i]= data[i][0] >= 55 && data[i][1] > 7 ? "Senior" : "Open";
            
             return res;
@@ -96,8 +95,15 @@ namespace Algorithm
                     res.Add(temp);
                 }
             }
-            
             return res;
+        }
+        
+        public static bool IsPrime(int n)
+        {
+            if (n <= 2 || n % 2 == 0) return n == 2;
+            for (int i = 2; i <= Math.Ceiling(Math.Sqrt(n)); i++)
+                if (n % i == 0) return false;
+            return true;
         }
         
     }
