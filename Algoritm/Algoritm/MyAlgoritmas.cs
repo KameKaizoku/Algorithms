@@ -7,6 +7,51 @@ namespace Algorithm
 {
     public class MyAlgorithms
     {
+        public static bool ValidParentheses(string input)
+        {
+            Stack<Char> stack = new Stack<char>();
+            foreach (var t in input)
+                if(t == '(') stack.Push(t);
+                else if (t==')' && (!stack.Any()  || stack.Pop()!='(')) return false;
+            
+            return !stack.Any();
+        }
+        
+        public static int Determinant(int[][] matrix)
+        {
+            int det = 0;
+            if (matrix[0].Length == 1) return matrix[0][0];
+            if (matrix.Length == 2) return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
+
+            for (int i = 0; i < matrix[0].Length; i++)
+            {
+                int[][] temp  = new int[matrix.Length-1][];
+                for (int j = 1; j < matrix.Length; j++)
+                {
+                    int[] num = new int[matrix[0].Length-1];
+                    int count = 0;
+                    for (int k = 0; k < matrix[0].Length; k++)
+                    {
+                        if (k != i)
+                        {
+                            num[count] = matrix[j][k];
+                            count++;
+                        }
+                       
+                    }
+                    temp[j - 1] = num;
+                }
+                if(i%2 == 0)
+                      det += matrix[0][i] * Determinant(temp);
+                else det -= matrix[0][i] * Determinant(temp);
+                
+            }
+
+            return det;
+        }
+
+          
+        
         
         public int GetSum(int a, int b)
         {
@@ -106,15 +151,7 @@ namespace Algorithm
             return true;
         }
         
-         public static bool ValidParentheses(string input)
-         {
-             Stack<Char> stack = new Stack<char>();
-             foreach (var t in input)
-                 if(t == '(') stack.Push(t);
-                 else if (t==')' && (!stack.Any()  || stack.Pop()!='(')) return false;
-            
-             return !stack.Any();
-         }
+         
         
     }
 }
